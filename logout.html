@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <title>Logging Out...</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icon.jpg">
+  <script>
+    // Clear any stored login/session data (optional)
+    localStorage.clear(); // if you're using localStorage
+
+    // Redirect to login page after a short delay
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 1500);
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2>You have been logged out</h2>
+  <p>Redirecting to login page...</p>
+</body>
+</html>
