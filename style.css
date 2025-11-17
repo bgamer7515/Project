@@ -1,0 +1,322 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 0px;
+  background: linear-gradient(-45deg, #f5f7fa, #c3cfe2, #a1c4fd);
+  background-size: 600% 600%;
+  animation: backgroundFlow 15s ease infinite;
+}
+
+.body {
+    background : rgba(44, 62, 80, 0.7 ) ;
+    padding : 40px ;
+    width : 350px ;
+    margin : 0 auto ;
+    
+}
+
+h1 {
+    color : #ffc700 ;
+}
+
+#container h2 {
+    color : #ffc700 ;
+}
+
+h3 {
+    color : #ffc700 ;
+}
+
+#body {
+    background : rgba(44, 62, 80, 0.7 ) ;   
+    justify-content: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    width : 400px ;
+    padding :40px ;
+}
+
+.container img {
+    width : 100px ;
+}
+
+.mes {
+    color : red ;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#body h2 {
+    color : #ffc700 ;
+}
+
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  color: #ffcc00 ;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffcc00;transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Section */
+section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.container p {
+  font-size: 1.1em;
+  color: #eee;
+}
+
+/* Buttons & Links */
+a[href=".html"] 
+  display: inline-block;
+  margin: 20px 15px;
+  padding: 12px 28px;
+  border: 2px solid #ffcc00;
+  background-color: transparent;
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.4s ease;
+
+
+a[href=".html"]:hover {
+  background-color: #ffcc00;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.logout-btn {
+  display: inline-block;
+  background-color: white ; /* red background */
+  color: black ;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: black ;
+  color : white ;
+   /* darker red on hover */
+}
+
+#logout-btn {
+  display: inline-block;
+  background-color: white ;
+  color: black ;
+  padding: 10px 20px;
+  text-align : center ;
+  display : flex ;
+  justify-content : center ;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn {
+  background-color : #ffc700;
+  color: white ;
+  padding: 2px 4px;
+  text-align : center ;
+  justify-content : center ;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 15px ;
+  transition: background-color 0.3s ease;
+}
+    
+
+.bn {
+    background: transparent ;
+  color: white ;
+  padding: 2px 4px;
+  text-align : center ;
+  justify-content : center ;
+  text-decoration: none;
+  border-radius: 3px;
+  border-bottom : 3px solid ;
+  font-size: 15px ;
+  transition: background-color 0.3s ease;
+}
+
+#bn {
+    background: transparent ;
+  color: #ffc700 ;
+  padding: 2px 4px;
+  text-align : center ;
+  justify-content : center ;
+  text-decoration: none;
+  border-radius: 3px;
+  border : none ;
+  font-size: 15px ;
+  transition: background-color 0.3s ease;
+}
+
+#bn:hover {
+    color : #ffc700 ;
+    opacity : 0.5 ;
+}
+
+
+.bn:hover {
+    color : #ffc700
+}
+
+.btn:hover{
+    color : #ffc700 ;
+    background : white ;
+}
+
+::placeholder {
+    color : whitesmoke ;
+    opacity : 0.7 ;
+}
+
+
+#logout-btn:hover {
+  background-color: black ;
+  color : white ;
+}
+
+.nav-link {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border : none ;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.nav-link.active {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.next {
+  display : inline-block ;
+  background-color : white ;
+  color: black ;
+  padding: 3px 6px;
+  text-align : center ;
+  float : right ;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 15px ;
+  font-weight : bold ;
+  transition: background-color 0.3s ease;
+}
+
+.next:hover{
+    color : white ;
+    background : black ;
+}
+
+
+.previous {
+    display : inline-block ;
+  background-color : white ;
+  color: black ;
+  padding: 3px 6px;
+  text-align : center ;
+  float : left ;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 15px ;
+  font-weight : bold ;
+  transition: background-color 0.3s ease;
+}
+
+
+.previous:hover{
+    color : white ;
+    background : black ;

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>〖ᴷⁱⁿᴳJøe√√</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.jpg">
+</head>
+<body>
+    <div id="body">
+        <h2>Log In</h2>
+        <form onsubmit="return loginUser(event)">
+            <input type="text" id="username" placeholder="username" required class="bn"><br><br>
+            <input type="password" id="password" placeholder="password" required class="bn"><br><br>
+            <div class="b">
+                <button class="btn" type="submit">
+                    <strong>Log In</strong>
+                </button><br><br>
+            </div>
+             <p id="loginMessage" class="mes"></p><br><br>
+        </form>
+        <em>Collect login details from <a href="https://wa.me/2349019042110" class="bn">
+            <strong>〖ᴷⁱⁿᴳJøe√√</strong>
+        </a> to access this site</em>
+        <footer>
+        <p>
+            &copy; 2025〖ᴷⁱⁿᴳJøe√√ web design. All rights reserved
+        </p>
+    </footer>
+       
+    </div>
+    
+    <script>
+  function loginUser(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (username === "King" && password === "kingjoe") {
+      window.location.href = "login.html"; // Redirect on success
+    } else {
+      document.getElementById('loginMessage').textContent = "Invalid credentials.";
+    }
+  }
+</script>
+
+</body>
+</html>
